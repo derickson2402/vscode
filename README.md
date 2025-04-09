@@ -1,12 +1,9 @@
-# devcontainer
+# VS Code config profiles: golang
 
-Collection of devcontainers for various languages, importable as git submodules.
-
-## Installation
-
-All you need to do is add this repo as a git submodule, targetting the branch for whatever language or toolchain you want.
-For example, to do python web development:
+VSCode config for using golang. Install with the following command:
 
 ```bash
 git submodule add --branch lang/golang https://github.com/derickson2402/vscode .vscode
 ```
+
+See the [main branch](https://github.com/derickson2402/vscode) for a list of available languages, and more info on how to use these config profiles.
