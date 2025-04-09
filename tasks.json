@@ -1,0 +1,89 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build submission tarball",
+      "type": "shell",
+      "command": "util/submit.sh",
+      "args": ["."]
+    },
+    {
+      "label": "wReceiver post-debug clean",
+      "type": "shell",
+      "command": "rm -rf output/ && mkdir output && echo -n '' > wReceiver.log"
+    },
+    {
+      "label": "wReceiver pre-launch clean and build",
+      "dependsOn": ["wReceiver post-debug clean", "CMake: build"]
+    },
+    {
+      "label": "wSender post-debug clean",
+      "type": "shell",
+      "command": "echo -n '' > wSender.log"
+    },
+    {
+      "label": "wSender pre-launch clean and build",
+      "dependsOn": ["wSender post-debug clean", "CMake: build"]
+    }
+    // {
+    // 	"label": "Run n videoservers",
+    // 	"type": "shell",
+    // 	"isBackground": true,
+    // 	"runOptions": {
+    // 		"reevaluateOnRerun": true,
+    // 		"instanceLimit": 1
+    // 	},
+    // 	"problemMatcher": [{
+    // 		"pattern": [{
+    // 			"regexp": ".",
+    // 			"file": 1,"line": 1,
+    // 			"column": 1,"message": 1
+    // 		}],
+    // 		"background": {
+    // 			"activeOnStart": true,
+    // 			"beginsPattern": { "regexp": "." },
+    // 			"endsPattern": { "regexp": "." }
+    // 		},
+    // 	}],
+    // 	"command": "cd videoserver && uv run launch_videoservers.py -p 8000 -n ${input:numVideoServers}"
+    // },
+    // {
+    // 	"label": "Initialize repo",
+    // 	"type": "shell",
+    // 	"command": "util/setup.sh"
+    // },
+    // {
+    // 	"label": "preLaunch build + vid srv",
+    // 	"dependsOn": [
+    // 		"CMake: build",
+    // 		"Run 3 videoservers"
+    // 	]
+    // },
+    // {
+    // 	"label": "Run 3 videoservers",
+    // 	"type": "shell",
+    // 	"isBackground": true,
+    // 	"command": "cd videoserver && uv run launch_videoservers.py -p 8000 -n 3",
+    // 	"problemMatcher": [{
+    // 		"pattern": [{
+    // 			"regexp": ".",
+    // 			"file": 1,"line": 1,
+    // 			"column": 1,"message": 1
+    // 		}],
+    // 		"background": {
+    // 			"activeOnStart": true,
+    // 			"beginsPattern": { "regexp": "." },
+    // 			"endsPattern": { "regexp": "." }
+    // 		},
+    // 	}]
+    // },
+  ]
+  // "inputs": [
+  // 	{
+  // 		"id": "numVideoServers",
+  // 		"description": "Number of servers:",
+  // 		"default": "1",
+  // 		"type": "promptString"
+  // 	},
+  // ]
+}

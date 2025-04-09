@@ -1,0 +1,21 @@
+{
+	"recommendations": [
+		"mhutchie.git-graph",
+		"nhoizey.gremlins",
+		"esbenp.prettier-vscode",
+		"stkb.rewrap",
+		"fabiospampinato.vscode-diff",
+		"kisstkondoros.vscode-gutter-preview",
+		"davidanson.vscode-markdownlint",
+		"yzhang.markdown-all-in-one",
+		"oderwat.indent-rainbow",
+		"sanaajani.taskrunnercode",
+		"beatzoid.http-status-codes",
+		"streetsidesoftware.code-spell-checker",
+		"charliermarsh.ruff",
+		"ms-python.black-formatter",
+		"donjayamanne.python-extension-pack",
+		"ms-vscode.cpptools-extension-pack",
+		"sanaajani.taskrunnercode"
+	]
+}
