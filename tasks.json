@@ -1,0 +1,13 @@
+{
+	"tasks": [
+		{
+			"label": "Example Task",
+			"type": "shell",
+			"group": "test",
+			"command": "echo",
+			"args": [
+				"This is a task that does nothing"
+			]
+		}
+	]
+}

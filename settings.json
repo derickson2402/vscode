@@ -1,0 +1,14 @@
+{
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.formatOnType": true,
+	"editor.formatOnSave": true,
+	"editor.wordBasedSuggestions": "off",
+	"editor.tabSize": 4,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"rewrap.autoWrap.enabled": true,
+	"rewrap.wrappingColumn": 80,
+	"editor.wordWrap": "wordWrapColumn",
+	"editor.wordWrapColumn": 80
+}

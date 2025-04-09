@@ -1,0 +1,18 @@
+{
+	"recommendations": [
+		"sanaajani.taskrunnercode",
+		"mhutchie.git-graph",
+		"nhoizey.gremlins",
+		"esbenp.prettier-vscode",
+		"stkb.rewrap",
+		"fabiospampinato.vscode-diff",
+		"kisstkondoros.vscode-gutter-preview",
+		"eriklynd.json-tools",
+		"davidanson.vscode-markdownlint",
+		"yzhang.markdown-all-in-one",
+		"oderwat.indent-rainbow",
+		"beatzoid.http-status-codes",
+		"redhat.vscode-yaml",
+		"streetsidesoftware.code-spell-checker"
+	]
+}
